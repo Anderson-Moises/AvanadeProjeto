@@ -8,8 +8,8 @@ services:
       - "5672:5672"     # porta padrão do RabbitMQ
       - "15672:15672"   # UI de gerenciamento
     environment:
-      RABBITMQ_DEFAULT_USER: admin
-      RABBITMQ_DEFAULT_PASS: 123456
+      RABBITMQ_DEFAULT_USER: guess
+      RABBITMQ_DEFAULT_PASS: guess
     networks:
       - avanade-network
 
@@ -17,9 +17,9 @@ services:
     image: mysql:8.0.43
     container_name: mysql
     environment:
-      MYSQL_ROOT_PASSWORD: T0245i@
+      MYSQL_ROOT_PASSWORD: root
       MYSQL_USER: dev
-      MYSQL_PASSWORD: T0245i@
+      MYSQL_PASSWORD: root
     ports:
       - "3307:3306"
     volumes:
