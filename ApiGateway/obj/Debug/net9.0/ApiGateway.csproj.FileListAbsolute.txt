@@ -1,0 +1,112 @@
+C:\Users\ander\Documents\Avanade\ApiGateway\bin\Debug\net9.0\appsettings.Development.json
+C:\Users\ander\Documents\Avanade\ApiGateway\bin\Debug\net9.0\appsettings.json
+C:\Users\ander\Documents\Avanade\ApiGateway\bin\Debug\net9.0\ocelot.json
+C:\Users\ander\Documents\Avanade\ApiGateway\bin\Debug\net9.0\ApiGateway.staticwebassets.endpoints.json
+C:\Users\ander\Documents\Avanade\ApiGateway\bin\Debug\net9.0\ApiGateway.exe
+C:\Users\ander\Documents\Avanade\ApiGateway\bin\Debug\net9.0\ApiGateway.deps.json
+C:\Users\ander\Documents\Avanade\ApiGateway\bin\Debug\net9.0\ApiGateway.runtimeconfig.json
+C:\Users\ander\Documents\Avanade\ApiGateway\bin\Debug\net9.0\ApiGateway.dll
+C:\Users\ander\Documents\Avanade\ApiGateway\bin\Debug\net9.0\ApiGateway.pdb
+C:\Users\ander\Documents\Avanade\ApiGateway\bin\Debug\net9.0\FluentValidation.dll
+C:\Users\ander\Documents\Avanade\ApiGateway\bin\Debug\net9.0\IPAddressRange.dll
+C:\Users\ander\Documents\Avanade\ApiGateway\bin\Debug\net9.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll
+C:\Users\ander\Documents\Avanade\ApiGateway\bin\Debug\net9.0\Microsoft.AspNetCore.JsonPatch.dll
+C:\Users\ander\Documents\Avanade\ApiGateway\bin\Debug\net9.0\Microsoft.AspNetCore.MiddlewareAnalysis.dll
+C:\Users\ander\Documents\Avanade\ApiGateway\bin\Debug\net9.0\Microsoft.AspNetCore.Mvc.NewtonsoftJson.dll
+C:\Users\ander\Documents\Avanade\ApiGateway\bin\Debug\net9.0\Microsoft.Extensions.DependencyInjection.Abstractions.dll
+C:\Users\ander\Documents\Avanade\ApiGateway\bin\Debug\net9.0\Microsoft.Extensions.DiagnosticAdapter.dll
+C:\Users\ander\Documents\Avanade\ApiGateway\bin\Debug\net9.0\Microsoft.IdentityModel.Abstractions.dll
+C:\Users\ander\Documents\Avanade\ApiGateway\bin\Debug\net9.0\Microsoft.IdentityModel.JsonWebTokens.dll
+C:\Users\ander\Documents\Avanade\ApiGateway\bin\Debug\net9.0\Microsoft.IdentityModel.Logging.dll
+C:\Users\ander\Documents\Avanade\ApiGateway\bin\Debug\net9.0\Microsoft.IdentityModel.Protocols.dll
+C:\Users\ander\Documents\Avanade\ApiGateway\bin\Debug\net9.0\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+C:\Users\ander\Documents\Avanade\ApiGateway\bin\Debug\net9.0\Microsoft.IdentityModel.Tokens.dll
+C:\Users\ander\Documents\Avanade\ApiGateway\bin\Debug\net9.0\Microsoft.OpenApi.dll
+C:\Users\ander\Documents\Avanade\ApiGateway\bin\Debug\net9.0\Newtonsoft.Json.dll
+C:\Users\ander\Documents\Avanade\ApiGateway\bin\Debug\net9.0\Newtonsoft.Json.Bson.dll
+C:\Users\ander\Documents\Avanade\ApiGateway\bin\Debug\net9.0\Ocelot.dll
+C:\Users\ander\Documents\Avanade\ApiGateway\bin\Debug\net9.0\RabbitMQ.Client.dll
+C:\Users\ander\Documents\Avanade\ApiGateway\bin\Debug\net9.0\Swashbuckle.AspNetCore.Swagger.dll
+C:\Users\ander\Documents\Avanade\ApiGateway\bin\Debug\net9.0\Swashbuckle.AspNetCore.SwaggerGen.dll
+C:\Users\ander\Documents\Avanade\ApiGateway\bin\Debug\net9.0\Swashbuckle.AspNetCore.SwaggerUI.dll
+C:\Users\ander\Documents\Avanade\ApiGateway\bin\Debug\net9.0\System.IdentityModel.Tokens.Jwt.dll
+C:\Users\ander\Documents\Avanade\ApiGateway\bin\Debug\net9.0\Common.dll
+C:\Users\ander\Documents\Avanade\ApiGateway\bin\Debug\net9.0\Common.pdb
+C:\Users\ander\Documents\Avanade\ApiGateway\obj\Debug\net9.0\ApiGateway.csproj.AssemblyReference.cache
+C:\Users\ander\Documents\Avanade\ApiGateway\obj\Debug\net9.0\rpswa.dswa.cache.json
+C:\Users\ander\Documents\Avanade\ApiGateway\obj\Debug\net9.0\ApiGateway.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\ander\Documents\Avanade\ApiGateway\obj\Debug\net9.0\ApiGateway.AssemblyInfoInputs.cache
+C:\Users\ander\Documents\Avanade\ApiGateway\obj\Debug\net9.0\ApiGateway.AssemblyInfo.cs
+C:\Users\ander\Documents\Avanade\ApiGateway\obj\Debug\net9.0\ApiGateway.csproj.CoreCompileInputs.cache
+C:\Users\ander\Documents\Avanade\ApiGateway\obj\Debug\net9.0\ApiGateway.MvcApplicationPartsAssemblyInfo.cs
+C:\Users\ander\Documents\Avanade\ApiGateway\obj\Debug\net9.0\ApiGateway.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\ander\Documents\Avanade\ApiGateway\obj\Debug\net9.0\rjimswa.dswa.cache.json
+C:\Users\ander\Documents\Avanade\ApiGateway\obj\Debug\net9.0\rjsmrazor.dswa.cache.json
+C:\Users\ander\Documents\Avanade\ApiGateway\obj\Debug\net9.0\rjsmcshtml.dswa.cache.json
+C:\Users\ander\Documents\Avanade\ApiGateway\obj\Debug\net9.0\scopedcss\bundle\ApiGateway.styles.css
+C:\Users\ander\Documents\Avanade\ApiGateway\obj\Debug\net9.0\staticwebassets.build.json
+C:\Users\ander\Documents\Avanade\ApiGateway\obj\Debug\net9.0\staticwebassets.build.json.cache
+C:\Users\ander\Documents\Avanade\ApiGateway\obj\Debug\net9.0\staticwebassets.development.json
+C:\Users\ander\Documents\Avanade\ApiGateway\obj\Debug\net9.0\staticwebassets.build.endpoints.json
+C:\Users\ander\Documents\Avanade\ApiGateway\obj\Debug\net9.0\ApiGateway.csproj.Up2Date
+C:\Users\ander\Documents\Avanade\ApiGateway\obj\Debug\net9.0\ApiGateway.dll
+C:\Users\ander\Documents\Avanade\ApiGateway\obj\Debug\net9.0\refint\ApiGateway.dll
+C:\Users\ander\Documents\Avanade\ApiGateway\obj\Debug\net9.0\ApiGateway.pdb
+C:\Users\ander\Documents\Avanade\ApiGateway\obj\Debug\net9.0\ApiGateway.genruntimeconfig.cache
+C:\Users\ander\Documents\Avanade\ApiGateway\obj\Debug\net9.0\ref\ApiGateway.dll
+C:\Users\ander\Documents\Avanade - Copia (2)\ApiGateway\bin\Debug\net9.0\appsettings.Development.json
+C:\Users\ander\Documents\Avanade - Copia (2)\ApiGateway\bin\Debug\net9.0\appsettings.json
+C:\Users\ander\Documents\Avanade - Copia (2)\ApiGateway\bin\Debug\net9.0\ocelot.json
+C:\Users\ander\Documents\Avanade - Copia (2)\ApiGateway\bin\Debug\net9.0\ApiGateway.staticwebassets.endpoints.json
+C:\Users\ander\Documents\Avanade - Copia (2)\ApiGateway\bin\Debug\net9.0\ApiGateway.exe
+C:\Users\ander\Documents\Avanade - Copia (2)\ApiGateway\bin\Debug\net9.0\ApiGateway.deps.json
+C:\Users\ander\Documents\Avanade - Copia (2)\ApiGateway\bin\Debug\net9.0\ApiGateway.runtimeconfig.json
+C:\Users\ander\Documents\Avanade - Copia (2)\ApiGateway\bin\Debug\net9.0\ApiGateway.dll
+C:\Users\ander\Documents\Avanade - Copia (2)\ApiGateway\bin\Debug\net9.0\ApiGateway.pdb
+C:\Users\ander\Documents\Avanade - Copia (2)\ApiGateway\bin\Debug\net9.0\FluentValidation.dll
+C:\Users\ander\Documents\Avanade - Copia (2)\ApiGateway\bin\Debug\net9.0\IPAddressRange.dll
+C:\Users\ander\Documents\Avanade - Copia (2)\ApiGateway\bin\Debug\net9.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll
+C:\Users\ander\Documents\Avanade - Copia (2)\ApiGateway\bin\Debug\net9.0\Microsoft.AspNetCore.JsonPatch.dll
+C:\Users\ander\Documents\Avanade - Copia (2)\ApiGateway\bin\Debug\net9.0\Microsoft.AspNetCore.MiddlewareAnalysis.dll
+C:\Users\ander\Documents\Avanade - Copia (2)\ApiGateway\bin\Debug\net9.0\Microsoft.AspNetCore.Mvc.NewtonsoftJson.dll
+C:\Users\ander\Documents\Avanade - Copia (2)\ApiGateway\bin\Debug\net9.0\Microsoft.Extensions.DependencyInjection.Abstractions.dll
+C:\Users\ander\Documents\Avanade - Copia (2)\ApiGateway\bin\Debug\net9.0\Microsoft.Extensions.DiagnosticAdapter.dll
+C:\Users\ander\Documents\Avanade - Copia (2)\ApiGateway\bin\Debug\net9.0\Microsoft.IdentityModel.Abstractions.dll
+C:\Users\ander\Documents\Avanade - Copia (2)\ApiGateway\bin\Debug\net9.0\Microsoft.IdentityModel.JsonWebTokens.dll
+C:\Users\ander\Documents\Avanade - Copia (2)\ApiGateway\bin\Debug\net9.0\Microsoft.IdentityModel.Logging.dll
+C:\Users\ander\Documents\Avanade - Copia (2)\ApiGateway\bin\Debug\net9.0\Microsoft.IdentityModel.Protocols.dll
+C:\Users\ander\Documents\Avanade - Copia (2)\ApiGateway\bin\Debug\net9.0\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+C:\Users\ander\Documents\Avanade - Copia (2)\ApiGateway\bin\Debug\net9.0\Microsoft.IdentityModel.Tokens.dll
+C:\Users\ander\Documents\Avanade - Copia (2)\ApiGateway\bin\Debug\net9.0\Microsoft.OpenApi.dll
+C:\Users\ander\Documents\Avanade - Copia (2)\ApiGateway\bin\Debug\net9.0\Newtonsoft.Json.dll
+C:\Users\ander\Documents\Avanade - Copia (2)\ApiGateway\bin\Debug\net9.0\Newtonsoft.Json.Bson.dll
+C:\Users\ander\Documents\Avanade - Copia (2)\ApiGateway\bin\Debug\net9.0\Ocelot.dll
+C:\Users\ander\Documents\Avanade - Copia (2)\ApiGateway\bin\Debug\net9.0\RabbitMQ.Client.dll
+C:\Users\ander\Documents\Avanade - Copia (2)\ApiGateway\bin\Debug\net9.0\Swashbuckle.AspNetCore.Swagger.dll
+C:\Users\ander\Documents\Avanade - Copia (2)\ApiGateway\bin\Debug\net9.0\Swashbuckle.AspNetCore.SwaggerGen.dll
+C:\Users\ander\Documents\Avanade - Copia (2)\ApiGateway\bin\Debug\net9.0\Swashbuckle.AspNetCore.SwaggerUI.dll
+C:\Users\ander\Documents\Avanade - Copia (2)\ApiGateway\bin\Debug\net9.0\System.IdentityModel.Tokens.Jwt.dll
+C:\Users\ander\Documents\Avanade - Copia (2)\ApiGateway\bin\Debug\net9.0\Common.dll
+C:\Users\ander\Documents\Avanade - Copia (2)\ApiGateway\bin\Debug\net9.0\Common.pdb
+C:\Users\ander\Documents\Avanade - Copia (2)\ApiGateway\obj\Debug\net9.0\ApiGateway.csproj.AssemblyReference.cache
+C:\Users\ander\Documents\Avanade - Copia (2)\ApiGateway\obj\Debug\net9.0\rpswa.dswa.cache.json
+C:\Users\ander\Documents\Avanade - Copia (2)\ApiGateway\obj\Debug\net9.0\ApiGateway.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\ander\Documents\Avanade - Copia (2)\ApiGateway\obj\Debug\net9.0\ApiGateway.AssemblyInfoInputs.cache
+C:\Users\ander\Documents\Avanade - Copia (2)\ApiGateway\obj\Debug\net9.0\ApiGateway.AssemblyInfo.cs
+C:\Users\ander\Documents\Avanade - Copia (2)\ApiGateway\obj\Debug\net9.0\ApiGateway.csproj.CoreCompileInputs.cache
+C:\Users\ander\Documents\Avanade - Copia (2)\ApiGateway\obj\Debug\net9.0\ApiGateway.MvcApplicationPartsAssemblyInfo.cs
+C:\Users\ander\Documents\Avanade - Copia (2)\ApiGateway\obj\Debug\net9.0\ApiGateway.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\ander\Documents\Avanade - Copia (2)\ApiGateway\obj\Debug\net9.0\rjimswa.dswa.cache.json
+C:\Users\ander\Documents\Avanade - Copia (2)\ApiGateway\obj\Debug\net9.0\rjsmrazor.dswa.cache.json
+C:\Users\ander\Documents\Avanade - Copia (2)\ApiGateway\obj\Debug\net9.0\rjsmcshtml.dswa.cache.json
+C:\Users\ander\Documents\Avanade - Copia (2)\ApiGateway\obj\Debug\net9.0\scopedcss\bundle\ApiGateway.styles.css
+C:\Users\ander\Documents\Avanade - Copia (2)\ApiGateway\obj\Debug\net9.0\staticwebassets.build.json
+C:\Users\ander\Documents\Avanade - Copia (2)\ApiGateway\obj\Debug\net9.0\staticwebassets.build.json.cache
+C:\Users\ander\Documents\Avanade - Copia (2)\ApiGateway\obj\Debug\net9.0\staticwebassets.development.json
+C:\Users\ander\Documents\Avanade - Copia (2)\ApiGateway\obj\Debug\net9.0\staticwebassets.build.endpoints.json
+C:\Users\ander\Documents\Avanade - Copia (2)\ApiGateway\obj\Debug\net9.0\ApiGateway.csproj.Up2Date
+C:\Users\ander\Documents\Avanade - Copia (2)\ApiGateway\obj\Debug\net9.0\ApiGateway.dll
+C:\Users\ander\Documents\Avanade - Copia (2)\ApiGateway\obj\Debug\net9.0\refint\ApiGateway.dll
+C:\Users\ander\Documents\Avanade - Copia (2)\ApiGateway\obj\Debug\net9.0\ApiGateway.pdb
+C:\Users\ander\Documents\Avanade - Copia (2)\ApiGateway\obj\Debug\net9.0\ApiGateway.genruntimeconfig.cache
+C:\Users\ander\Documents\Avanade - Copia (2)\ApiGateway\obj\Debug\net9.0\ref\ApiGateway.dll

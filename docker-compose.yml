@@ -1,0 +1,84 @@
+
+
+services:
+  rabbitmq:
+    image: rabbitmq:3-management
+    container_name: rabbitmq
+    ports:
+      - "5672:5672"     # porta padrão do RabbitMQ
+      - "15672:15672"   # UI de gerenciamento
+    environment:
+      RABBITMQ_DEFAULT_USER: admin
+      RABBITMQ_DEFAULT_PASS: 123456
+    networks:
+      - avanade-network
+
+  mysql:
+    image: mysql:8.0.43
+    container_name: mysql
+    environment:
+      MYSQL_ROOT_PASSWORD: T0245i@
+      MYSQL_USER: dev
+      MYSQL_PASSWORD: T0245i@
+    ports:
+      - "3307:3306"
+    volumes:
+      - mysql_data:/var/lib/mysql
+      - ./mysql-init:/docker-entrypoint-initdb.d
+    networks:
+      - avanade-network
+
+  estoque-service:
+    build:
+      context: .                # raiz do projeto, não só EstoqueService
+      dockerfile: EstoqueService/Dockerfile
+    container_name: estoque-service
+    ports:
+      - "5118:5118"
+    depends_on:
+      - rabbitmq
+      - mysql
+    environment:
+      - ASPNETCORE_ENVIRONMENT=Development
+      - ConnectionStrings__DefaultConnection=Server=mysql;Database=EstoqueDB;User=dev;Password=T0245i@;
+    networks:
+      - avanade-network
+
+  vendas-service:
+    build:
+      context: .                # raiz do projeto, não só VendasService
+      dockerfile: VendasService/Dockerfile
+    container_name: vendas-service
+    ports:
+      - "5119:5119"
+    depends_on:
+      - estoque-service
+      - mysql
+    environment:
+      - ASPNETCORE_ENVIRONMENT=Development
+      - ConnectionStrings__DefaultConnection=Server=mysql;Database=VendasDB;User=dev;Password=T0245i@;
+    networks:
+      - avanade-network
+
+  api-gateway:
+    build:
+      context: .                # ou o caminho correto para o projeto do API Gateway
+      dockerfile: ApiGateway/Dockerfile
+    container_name: api-gateway
+    ports:
+      - "5103:80"               # Porta externa 5103 mapeada para a porta interna 80
+    depends_on:
+      - estoque-service
+      - vendas-service
+    environment:
+      - ASPNETCORE_ENVIRONMENT=Development
+    networks:
+      - avanade-network
+
+networks:
+  avanade-network:
+    external: true
+    # driver: bridge
+
+volumes:
+  mysql_data:
