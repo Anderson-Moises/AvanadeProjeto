@@ -9,11 +9,11 @@ namespace VendasService.Services
 {
     public class PedidoService : IPedidoService
     {
-        private readonly PedidoContext _context;
+        private readonly VendasContext _context;
         private readonly IRabbitMQPublisher _publisher;
         private readonly IProdutoService _produtoService; // ← Http service agora
 
-        public PedidoService(PedidoContext context, IRabbitMQPublisher publisher, IProdutoService produtoService, IPrecoService precoService)
+        public PedidoService(VendasContext context, IRabbitMQPublisher publisher, IProdutoService produtoService, IPrecoService precoService)
         {
             _context = context;
             _publisher = publisher;
@@ -21,7 +21,7 @@ namespace VendasService.Services
         }
 
         public async Task<Pedido> CriarPedidoAsync(PedidoCreateDto dto, string token = "")
-    {
+        {
         var pedido = new Pedido { Itens = new List<PedidoItem>() };
         decimal total = 0;
 
@@ -92,6 +92,20 @@ namespace VendasService.Services
 
             if (pedido == null)
                 return false;
+
+            // 🔄 Repor estoque usando método interno
+            foreach (var item in pedido.Itens)
+            {
+                try
+                {
+                    await _produtoService.ReporInterno(item.ProdutoId, item.Quantidade, token);
+                    Console.WriteLine($"[PedidoService] Estoque reposto: Produto {item.ProdutoId}, Quantidade {item.Quantidade}");
+                }
+                catch (Exception ex)
+                {
+                    Console.WriteLine($"⚠ Erro ao repor estoque do Produto {item.ProdutoId}: {ex.Message}");
+                }
+            }
 
             _context.Pedidos.Remove(pedido);
             await _context.SaveChangesAsync();

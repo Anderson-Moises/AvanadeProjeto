@@ -78,12 +78,15 @@ namespace EstoqueService.Mensagem
                 throw new Exception("Falha ao conectar ao RabbitMQ após várias tentativas.");
         }
 
-        protected override Task ExecuteAsync(CancellationToken stoppingToken)
+        protected override async Task ExecuteAsync(CancellationToken stoppingToken)
         {
             var consumer = new AsyncEventingBasicConsumer(_channel);
 
             consumer.Received += async (model, ea) =>
             {
+                if (stoppingToken.IsCancellationRequested)
+                    return;
+
                 var body = ea.Body.ToArray();
                 var message = Encoding.UTF8.GetString(body);
 
@@ -107,11 +110,13 @@ namespace EstoqueService.Mensagem
 
                     Console.WriteLine($"[RabbitMQConsumer] Estoque atualizado: Produto {venda.ProdutoId}");
 
-                    // simula processamento pesado
-                    Console.WriteLine("[Teste] Pausa de 5s antes do ack...");
-                    await Task.Delay(5000);
+                    await Task.Delay(5000, stoppingToken); // respeita cancelamento
 
                     _channel.BasicAck(ea.DeliveryTag, false);
+                }
+                catch (OperationCanceledException)
+                {
+                    // Normalmente ignorado no shutdown
                 }
                 catch (Exception ex)
                 {
@@ -122,14 +127,28 @@ namespace EstoqueService.Mensagem
 
             _channel.BasicConsume(queue: QueueName, autoAck: false, consumer: consumer);
             Console.WriteLine("[RabbitMQConsumer] Aguardando mensagens...");
-            return Task.CompletedTask;
+
+            try
+            {
+                await Task.Delay(Timeout.Infinite, stoppingToken);
+            }
+            catch (TaskCanceledException)
+            {
+                // Esperado no encerramento
+            }
         }
+
 
         public override void Dispose()
         {
-            _channel?.Close();
-            _connection?.Close();
+            if (_channel?.IsOpen ?? false)
+                _channel.Close();
+
+            if (_connection?.IsOpen ?? false)
+                _connection.Close();
+
             base.Dispose();
         }
+
     }
 }

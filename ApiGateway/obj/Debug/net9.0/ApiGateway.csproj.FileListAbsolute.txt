@@ -110,3 +110,4 @@ C:\Users\ander\Documents\Avanade - Copia (2)\ApiGateway\obj\Debug\net9.0\refint\
 C:\Users\ander\Documents\Avanade - Copia (2)\ApiGateway\obj\Debug\net9.0\ApiGateway.pdb
 C:\Users\ander\Documents\Avanade - Copia (2)\ApiGateway\obj\Debug\net9.0\ApiGateway.genruntimeconfig.cache
 C:\Users\ander\Documents\Avanade - Copia (2)\ApiGateway\obj\Debug\net9.0\ref\ApiGateway.dll
+C:\Users\ander\Documents\Avanade\ApiGateway\obj\Debug\net9.0\ApiGateway.sourcelink.json

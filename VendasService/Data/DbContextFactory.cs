@@ -4,20 +4,20 @@ using Microsoft.Extensions.Configuration;
 
 namespace VendasService.Data
 {
-    public class PedidoContextFactory : IDesignTimeDbContextFactory<PedidoContext>
+    public class VendasContextFactory : IDesignTimeDbContextFactory<VendasContext>
     {
-        public PedidoContext CreateDbContext(string[] args)
+        public VendasContext CreateDbContext(string[] args)
         {
             var configuration = new ConfigurationBuilder()
                 .SetBasePath(Directory.GetCurrentDirectory())
                 .AddJsonFile("appsettings.json")
                 .Build();
 
-            var optionsBuilder = new DbContextOptionsBuilder<PedidoContext>();
+            var optionsBuilder = new DbContextOptionsBuilder<VendasContext>();
             optionsBuilder.UseMySql(configuration.GetConnectionString("DefaultConnection"),
                 new MySqlServerVersion(new Version(8, 0, 43)));
 
-            return new PedidoContext(optionsBuilder.Options);
+            return new VendasContext(optionsBuilder.Options);
         }
     }
 }

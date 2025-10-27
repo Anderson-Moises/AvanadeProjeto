@@ -3,6 +3,7 @@ using System.Text;
 using System.Text.Json;
 using Common.Messages;
 using VendasService.Mensagem;
+using Microsoft.Extensions.Configuration;
 
 namespace VendasService.Services
 {
@@ -12,25 +13,30 @@ namespace VendasService.Services
         private readonly IModel _channel;
         private readonly string _queueName = "fila_pedidos";
 
-        public RabbitMQPublisher()
+        public RabbitMQPublisher(IConfiguration configuration)
         {
+            var environment = Environment.GetEnvironmentVariable("ASPNETCORE_ENVIRONMENT");
+            var isLocal = environment == "Development";
+
             var factory = new ConnectionFactory()
             {
-                HostName = "rabbitmq",
-                UserName = "admin",
-                Password = "123456"
+                HostName = isLocal ? "localhost" : "rabbitmq",
+                UserName = isLocal ? "guest" : "admin",
+                Password = isLocal ? "guest" : "123456"
             };
 
             _connection = factory.CreateConnection();
             _channel = _connection.CreateModel();
 
             _channel.QueueDeclare(
-                queue: _queueName,
+                queue: "fila_pedidos",
                 durable: true,
                 exclusive: false,
                 autoDelete: false,
                 arguments: null
             );
+
+            Console.WriteLine($"[RabbitMQPublisher] Conectado ao RabbitMQ em: {factory.HostName}");
         }
 
         public void PublicarPedido(VendaMessage venda)

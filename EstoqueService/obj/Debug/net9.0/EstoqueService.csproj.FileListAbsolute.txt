@@ -344,3 +344,4 @@ C:\Users\ander\Documents\Avanade - Copia (2)\EstoqueService\obj\Debug\net9.0\ref
 C:\Users\ander\Documents\Avanade - Copia (2)\EstoqueService\obj\Debug\net9.0\EstoqueService.pdb
 C:\Users\ander\Documents\Avanade - Copia (2)\EstoqueService\obj\Debug\net9.0\EstoqueService.genruntimeconfig.cache
 C:\Users\ander\Documents\Avanade - Copia (2)\EstoqueService\obj\Debug\net9.0\ref\EstoqueService.dll
+C:\Users\ander\Documents\Avanade\EstoqueService\obj\Debug\net9.0\EstoqueService.sourcelink.json

@@ -3,7 +3,6 @@ using System;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
-using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using VendasService.Data;
 
@@ -11,12 +10,10 @@ using VendasService.Data;
 
 namespace VendasService.Migrations
 {
-    [DbContext(typeof(PedidoContext))]
-    [Migration("20251020195649_Atualização")]
-    partial class Atualização
+    [DbContext(typeof(VendasContext))]
+    partial class VendasContextModelSnapshot : ModelSnapshot
     {
-        /// <inheritdoc />
-        protected override void BuildTargetModel(ModelBuilder modelBuilder)
+        protected override void BuildModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder

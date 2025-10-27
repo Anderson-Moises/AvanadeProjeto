@@ -10,15 +10,16 @@ using Microsoft.OpenApi.Models; // Se estiver usando a mesma classe JwtSettings
 
 var builder = WebApplication.CreateBuilder(args);
 
-// Escolher a connection string com base em variável de ambiente
-// Você pode setar LOCAL=true para rodar localmente
-var isLocal = builder.Configuration.GetValue<bool>("LOCAL");
-var connectionString = isLocal
-    ? builder.Configuration.GetConnectionString("LocalConnection")
-    : builder.Configuration.GetConnectionString("DockerConnection");
+// Detecta se está rodando no Docker
+bool runningInDocker = Environment.GetEnvironmentVariable("DOTNET_RUNNING_IN_CONTAINER") == "true";
+
+// Escolhe a connection string certa
+string connectionString = runningInDocker
+    ? builder.Configuration.GetConnectionString("DockerConnection")!
+    : builder.Configuration.GetConnectionString("LocalConnection")!;
 
 // Configura o DbContext com retry em caso de falha
-builder.Services.AddDbContext<PedidoContext>(options =>
+builder.Services.AddDbContext<VendasContext>(options =>
     options.UseMySql(
         connectionString,
         new MySqlServerVersion(new Version(8, 0, 43)),
@@ -64,10 +65,15 @@ builder.Services.AddScoped<IRabbitMQPublisher, RabbitMQPublisher>();
 builder.Services.AddScoped<IPrecoService, PrecoService>();
 
 
+var produtoServiceUrl = runningInDocker
+    ? "http://estoque-service:5118/"
+    : "http://localhost:5118/";
+
 builder.Services.AddHttpClient<IProdutoService, ProdutoServiceHttp>(client =>
 {
-    client.BaseAddress = new Uri("http://estoque-service:5118/");
+    client.BaseAddress = new Uri(produtoServiceUrl);
 });
+
 
 builder.Services.AddControllers();
 builder.Services.AddEndpointsApiExplorer();
@@ -104,12 +110,9 @@ c =>
 
 
 var app = builder.Build();
-
-if (app.Environment.IsDevelopment())
-{
-    app.UseSwagger();
-    app.UseSwaggerUI();
-}
+    
+app.UseSwagger();
+app.UseSwaggerUI();
 
 app.UseRouting();
 app.UseAuthentication();
@@ -120,7 +123,7 @@ app.MapControllers();
 // 🔧 Executa migrações automáticas no MySQL ao iniciar
 using (var scope = app.Services.CreateScope())
 {
-    var context = scope.ServiceProvider.GetRequiredService<PedidoContext>();
+    var context = scope.ServiceProvider.GetRequiredService<VendasContext>();
 
     try
     {
