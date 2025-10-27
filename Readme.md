@@ -179,4 +179,4 @@ Universidade Estácio / Unigranrio
 
 “De dev fullstack a líder estratégico — visão de carreira: DevSecOps → CEO.”
 
-🔗 LinkedIn – Anderson Moisés
+🔗 LinkedIn – www.linkedin.com/in/anderson-moisés-985829267
